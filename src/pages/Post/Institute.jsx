@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 
-const Course = () => {
+const Institute = () => {
   let [inputs, setInputs] = useState({})
   function handleIInput(e) {
     setInputs((prev) => {
@@ -16,20 +16,20 @@ const Course = () => {
         <input value={inputs.name || ''} name='name' onChange={handleIInput} />
       </label>
       <label>
-        Duration:
-        <input value={inputs.duration || ''} name='duration' onChange={handleIInput} />
-      </label>
-      <label>
-        Fees:
-        <input value={inputs.fees || ''} name='fees' onChange={handleIInput} />
+        Address:
+        <input value={inputs.address || ''} name='address' onChange={handleIInput} />
       </label>
       <label>
         Short Name:
         <input value={inputs.shortName || ''} name='shortName' onChange={handleIInput} />
       </label>
+      <label>
+        Telephone:
+        <input value={inputs.tel || ''} name='tel' onChange={handleIInput} />
+      </label>
       <button
         onClick={(e) => {
-          axios.post('http://localhost:2121/courses', inputs)
+          axios.post('http://localhost:2121/institutes', inputs)
             .then(() => {
               setInputs({})
             })
@@ -44,4 +44,4 @@ const Course = () => {
   </div>)
 }
 
-export default Course
+export default Institute

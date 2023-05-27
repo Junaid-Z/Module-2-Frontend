@@ -22,6 +22,12 @@ const LinkList = () => {
       <Link to={'/teachers'}>
        Teachers List
       </Link>
+      <Link to={'/addInstitute'}>
+        Add Institute
+      </Link>
+      <Link to={'/institutes'}>
+       Institutes List
+      </Link>
     </div>
   )
 }

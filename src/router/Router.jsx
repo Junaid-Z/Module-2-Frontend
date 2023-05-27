@@ -13,6 +13,9 @@ import '../LinkListPage.css'
 import EditCourse from '../pages/Put/Course'
 import EditTeacher from '../pages/Put/Teacher'
 import EditStudent from '../pages/Put/Student'
+import Institute from '../pages/Post/Institute'
+import EditInstitute from '../pages/Put/Institute'
+import InstitutePage from '../pages/Get/Institute'
 
 const Router = () => {
   return (
@@ -30,6 +33,10 @@ const Router = () => {
         <Route path='/addTeacher' element={<Teacher />} />
         <Route path='/editTeacher/:_id' element={<EditTeacher />} />
         <Route path='/teachers' element={<TeacherPage />} />
+
+        <Route path='/addInstitute' element={<Institute />} />
+        <Route path='/editInstitute/:_id' element={<EditInstitute />} />
+        <Route path='/institutes' element={<InstitutePage />} />
       </Routes>
     </BrowserRouter>
   )
