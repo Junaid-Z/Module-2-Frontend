@@ -1,0 +1,41 @@
+.studentFormHolder {
+    height: 100vh;
+    display: flex;
+}
+
+.studentForm {
+    padding: 2rem;
+    gap: 1rem;
+    margin: auto;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: .1rem solid black;
+    border-radius: 1rem;
+}
+
+.studentForm>label {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.studentForm>button,
+.studentForm>label>input {
+    border: .1rem solid black;
+    border-radius: .4rem;
+    margin-left: auto;
+    min-width: 300px;
+    padding: .5rem;
+    outline: none;
+    background-color: transparent;
+}
+
+.studentForm>button {
+    margin: auto;
+    cursor: pointer;
+}
+
+.studentForm>button {
+    font-size: 1.2rem;
+    margin: auto;
+}
