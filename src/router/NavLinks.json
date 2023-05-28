@@ -1,0 +1,34 @@
+[
+    {
+        "url": "/addStudent",
+        "displayName": "Add Student"
+    },
+    {
+        "url": "/students",
+        "displayName": "Student List"
+    },
+    {
+        "url": "/addCourse",
+        "displayName": "Add Course"
+    },
+    {
+        "url": "/courses",
+        "displayName": "Course List"
+    },
+    {
+        "url": "/addTeacher",
+        "displayName": "Add Teacher"
+    },
+    {
+        "url": "/teachers",
+        "displayName": "Teachers List"
+    },
+    {
+        "url": "/addInstitute",
+        "displayName": " Add Institute"
+    },
+    {
+        "url": "/institutes",
+        "displayName": "Institutes List"
+    }
+]
