@@ -1,0 +1,55 @@
+.postPageContainer {
+    width: 800px;
+    margin: auto;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    grid-template-areas: "header header" "logo form";
+    box-shadow: 3px 3px 6px rgba(136, 136, 136, 0.7), -3px -3px 6px rgba(136, 136, 136, 0.7);
+}
+
+.postPageContainer>.postForm {
+    padding: 0 2rem 0 0;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postPageContainer>.postForm>div {
+    width: 100%;
+}
+
+.postPageContainer>.title {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    font-family: 'Kanit', sans-serif;
+    grid-area: header;
+    text-align: center;
+}
+
+.postLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postPageContainer input {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.postPageContainer button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.studentLogo {
+    fill: rgb(62, 152, 255) !important;
+    width: 250px !important;
+    height: 250px !important;
+}
